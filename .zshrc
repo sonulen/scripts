@@ -1,7 +1,7 @@
 #POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir vcs)
 #POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs history time)
 
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir vcs)
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir_writable dir vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=()
 
 # If you come from bash you might have to change your $PATH.

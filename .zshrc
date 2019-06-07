@@ -70,6 +70,7 @@ ZSH_THEME="powerlevel9k/powerlevel9k"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
+  zsh-autosuggestions
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -106,3 +107,4 @@ source $ZSH/oh-my-zsh.sh
 [[ -s /home/sonulen/.autojump/etc/profile.d/autojump.sh ]] && source /home/sonulen/.autojump/etc/profile.d/autojump.sh
 
 	autoload -U compinit && compinit -u
+source /home/sonulen/wrk/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

@@ -5,3 +5,5 @@ git config --global user.email "sonulen@gmail.com"
 git config --global core.editor "atom -w"
 git config --global color.ui true
 git config --global alias.hist "hist = log --pretty=format:'%Cblue%h %Cred%d %Creset| %s | %Cgreen[%an] %ad' --graph --relative-date"
+git config --global core.quotepath off
+

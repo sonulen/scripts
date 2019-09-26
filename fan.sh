@@ -15,7 +15,7 @@ fi
 if [ $var1  -eq 1 ]
 then
 echo okay. w8 a sec...
-sudo sh -c "echo $1 >>/sys/class/hwmon/hwmon3/device/hwmon/hwmon3/pwm1 "
+sudo sh -c "echo $1 >>/sys/class/hwmon/hwmon1/device/hwmon/hwmon1/pwm1 "
 echo done!
 else
 echo incorrect input data dude.

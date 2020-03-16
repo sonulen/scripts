@@ -107,4 +107,6 @@ source $ZSH/oh-my-zsh.sh
 [[ -s /home/sonulen/.autojump/etc/profile.d/autojump.sh ]] && source /home/sonulen/.autojump/etc/profile.d/autojump.sh
 
 	autoload -U compinit && compinit -u
-source /home/sonulen/wrk/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /home/sonulen/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+alias clr="timeout 2 cmatrix -u 2; clear"

@@ -34,19 +34,33 @@ POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=()
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
+# sonulen edition
+
+export TERM="xterm-256color"
+
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(virtualenv context dir_writable dir vcs)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=()
+
+# Path to your oh-my-zsh installation.
+export ZSH=/home/sonulen/.oh-my-zsh
+
 ZSH_THEME="powerlevel9k/powerlevel9k"
 
 plugins=(
   git
   zsh-autosuggestions
+  virtualenv
 )
 
-source $ZSH/oh-my-zsh.sh
+source /home/sonulen/.oh-my-zsh/oh-my-zsh.sh
 
 [[ -s /home/sonulen/.autojump/etc/profile.d/autojump.sh ]] && source /home/sonulen/.autojump/etc/profile.d/autojump.sh
 
 autoload -U compinit && compinit -u
 source /home/sonulen/wrk/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+alias clr="timeout 2 cmatrix -u 2 -s -C cyan; clear"
+
 EOF
 
 source .zshrc

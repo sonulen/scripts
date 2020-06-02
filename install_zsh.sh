@@ -16,11 +16,11 @@ mv 10-powerline-symbols.conf ~/.config/fontconfig/conf.d/
 git clone git://github.com/wting/autojump.git
 cd autojump
 ./install.py
+cd ../
 
 # Highlighting
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
 echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
-rm -rf zsh-syntax-highlighting
 
 # Autosuggestions
 git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
@@ -34,15 +34,10 @@ POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=()
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
-# sonulen edition
-
 export TERM="xterm-256color"
 
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(virtualenv context dir_writable dir vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=()
-
-# Path to your oh-my-zsh installation.
-export ZSH=/home/sonulen/.oh-my-zsh
 
 ZSH_THEME="powerlevel9k/powerlevel9k"
 

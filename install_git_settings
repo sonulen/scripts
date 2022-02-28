@@ -5,4 +5,6 @@ git config --global user.email "sonulen@gmail.com"
 git config --global color.ui true
 git config --global alias.hist "log --pretty=format:'%Cblue%h %Cred%d %Creset| %s | %Cgreen[%an] %ad' --graph --relative-date"
 git config --global core.quotepath off
+git config --global core.pager "diff-so-fancy | less --tabs=4 -RFX"
+git config --global interactive.diffFilter "diff-so-fancy --patch"
 
